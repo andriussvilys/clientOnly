@@ -1,0 +1,44 @@
+.ArtworkInfo-wrapper_main{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    will-change: transform;
+    transition: 0.2s transform;
+
+    // padding: 10px 10px 10px 50px;
+}
+.ArtworkInfo-container{
+    // position: relative;
+    position: absolute;
+    z-index: 999;
+}
+.ArtworkInfo-title_wrapper{
+    position: absolute;
+    bottom: 99%;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+}
+.ArtworkInfo_padded{
+    padding: 0 20px;
+}
+.ArtworkInfo-title_content{
+    line-height: 14px;
+    margin: 10px 0;
+    margin-bottom: 16px;
+}
+.ArtworkInfo-title_secondary{
+    margin-bottom: 3px;
+}
+// .ArtworkInfo-title_content, .secondaryInfo{
+//     padding-left: 20px;
+// }
+// .ArtworkInfo-wrapper{
+//     padding-left: 30px;
+// }
+// .ArtworkInfo--descriptions, 
+// .ArtworkInfo-container_seealso, 
+// .Tags-item_wrapper{
+//     padding-right: 20px;
+// }
+

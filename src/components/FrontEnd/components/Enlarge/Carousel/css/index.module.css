@@ -1,0 +1,195 @@
+.disableBodyScroll {
+  overflow: hidden;
+}
+
+.showOverflow {
+  overflow: visible !important;
+}
+
+.smoothSlide {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+
+.arrowNext {
+  position: absolute;
+  height: 20%;
+  top: 40%;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+  z-index: 999;
+  right: 5px;
+}
+
+.arrowPrev {
+  position: absolute;
+  height: 20%;
+  top: 40%;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+  z-index: 999;
+  left: 5px;
+}
+
+.arrowNext:after {
+  position: absolute;
+  line-height: 20px;
+  top: calc(50% - 10px);
+  font-size: 35px;
+  cursor: pointer;
+  content: ">";
+  right: 0;
+}
+
+.arrowPrev:after {
+  position: absolute;
+  line-height: 20px;
+  top: calc(50% - 10px);
+  font-size: 35px;
+  cursor: pointer;
+  content: "<";
+  left: 0;
+}
+
+.arrowNext:hover, .arrowPrev:hover {
+  opacity: 0.5;
+}
+
+.slideContainer {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 998;
+  height: calc(100% - 70px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  will-change: transform;
+  overflow: hidden;
+  z-index: 998;
+  -webkit-box-shadow: -2px 0px 17px 4px rgba(182, 182, 182, 0.28);
+          box-shadow: -2px 0px 17px 4px rgba(182, 182, 182, 0.28);
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.zoomOut {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
+.slide {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-color: white;
+  will-change: transform;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.slide img {
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  will-change: transform;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  -ms-touch-action: none;
+      touch-action: none;
+  z-index: 999;
+}
+
+.imgContainer {
+  width: 100%;
+  display: block;
+}
+
+.button_zoom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.zoomedIn {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.dotContainer {
+  max-width: 50%;
+  width: 50%;
+  height: 200%;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.dotList {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  scroll-behavior: smooth;
+  height: 30px;
+}
+
+.dotWrapper {
+  position: relative;
+}
+
+.dot {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 999px;
+  background: white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dot_active {
+  background: lime;
+}
+/*# sourceMappingURL=index.module.css.map */

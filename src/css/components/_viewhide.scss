@@ -1,0 +1,40 @@
+$border-dark: 3px solid rgb(73, 73, 73);
+$border-light: 3px solid rgb(187, 187, 187);
+.button_legacy-style--container{
+    display: flex;
+    margin-top: 4px;
+    align-items: center;
+    height: 40px;
+}
+.button_legacy-style{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2px !important;
+    padding: 2px;
+    font-size: 12px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.button_legacy-style:focus{
+}
+.button_legacy-style_disable{
+    border-top: $border-light;
+    border-right: $border-dark;
+    border-bottom: $border-dark;
+    border-left: $border-light;
+    font-size: 14px;
+    color: black;
+    background-color: rgb(245, 245, 245);
+}
+.button_legacy-style_enable{
+    font-size: 14px;
+    background-color: rgb(170, 170, 170);
+    color:  rgb(128, 128, 128);
+    border-top: $border-dark;;
+    border-right: $border-light;
+    border-bottom: $border-light;
+    border-left: $border-dark;
+}
+// .FilterTree-container{
+//     background-color: rgb(160, 160, 160);
+// }

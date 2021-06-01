@@ -1,0 +1,40 @@
+.ArtworkInfo-wrapper_main {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  will-change: transform;
+  -webkit-transition: 0.2s -webkit-transform;
+  transition: 0.2s -webkit-transform;
+  transition: 0.2s transform;
+  transition: 0.2s transform, 0.2s -webkit-transform;
+}
+
+.ArtworkInfo-container {
+  position: absolute;
+  z-index: 999;
+}
+
+.ArtworkInfo-title_wrapper {
+  position: absolute;
+  bottom: 99%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  width: 100%;
+}
+
+.ArtworkInfo_padded {
+  padding: 0 20px;
+}
+
+.ArtworkInfo-title_content {
+  line-height: 14px;
+  margin: 10px 0;
+  margin-bottom: 16px;
+}
+
+.ArtworkInfo-title_secondary {
+  margin-bottom: 3px;
+}
+/*# sourceMappingURL=artworkInfo.css.map */

@@ -1,0 +1,34 @@
+.slick-arrow{
+    color: black !important;
+}
+.slick-arrow:focus{
+    border: none
+}
+.slick-prev{
+    left: 10px !important;
+}
+.slick-next{
+    right: 10px !important;
+}
+.slick-prev::before{
+    content: "<" !important;
+    color: black !important;
+}
+
+.slick-next::before{
+    content: ">" !important;
+    color: black !important;
+}
+.image-magnify-enlarged{
+    border: 2px solid red;
+    transform: scale(2);
+    height: 100%;
+    width: 100%;
+    // top: 50%;
+    // right: 50%;
+}
+.image-magnify-normal{
+    border: 2px solid lime;
+    position: relative;
+    // overflow: hidden;
+}

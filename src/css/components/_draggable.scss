@@ -1,0 +1,38 @@
+.DnDfilesList{
+    height: 100%;
+    overflow-y: auto;
+}
+.draggable-container{
+    // display: flex;
+    border: 2px solid;
+    border-radius: 12px;
+    overflow: hidden;
+    // margin-bottom: 8px;
+    margin:0 8px 8px 4px;
+    background-color: rgb(194, 194, 194);
+}
+.image-index-box{
+    cursor: n-resize;
+    position: relative;
+    height: 120px;
+    div{
+        position: absolute;
+    }
+    .ImagesPreview--imageContainer{
+        min-width: auto;
+    }
+}
+.draggable--index{
+    height: 45px;
+    width: 45px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    font-weight: bold;
+    border: 2px solid;
+    font-size: 30px;
+    right: 35px;
+    top: calc(50% - 22px);
+}

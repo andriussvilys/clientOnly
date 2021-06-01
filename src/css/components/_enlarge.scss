@@ -1,0 +1,124 @@
+.fullWidth{
+    width: 100% !important;
+}
+.enlargeContainer{
+    height: 100% !important;
+    width: 100%;
+    max-width: 100%;
+    opacity: 1;
+    transform-origin: right;
+    transform: translateX(100%);
+    right: 0;
+    top: 0;
+    background-color: white;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    z-index: 99;
+    transition: transform 0.3s;
+    border-left: 1px solid black;
+}
+.enlarge-bar{
+    border-bottom: 1px solid black;
+    .controls-exitButton{
+        img{
+            height: 100%;
+        }
+    }
+}
+.enlarge-closeButton-container{
+    width: 120px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+.controls-exitButton{
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    background-color: unset;
+    margin-top: 7px;
+    height: 30px;
+    width: 30px;
+}
+.controls-slideButton{
+    border-left: 1px solid;
+}
+.viewControls{
+
+    width: 100%;
+    height: 30px;
+    bottom: 100%;
+    right: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    padding-left: 15px;
+}
+.viewControls-button-info{
+    position: relative;
+    padding: 0 0 0 40px;
+}
+.viewControls-button{
+    padding-right: 20px;
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    span{
+        white-space: nowrap;
+        font-weight: bold;
+    }
+}
+.viewControls-button:after{
+    font-size: 20px;
+    content: "ⓘ";
+    position: absolute;
+    left: 10px;
+}
+.viewControls-button-disabled{
+    opacity: 0.3;
+}
+.viewControls-viewNext{
+    height: 28px;
+    width: 28px;
+}
+.viewControls-showInfo-infoIcon{
+    height: 20px;
+    width: 20px;
+    margin-right: 7px;
+}
+
+@media only screen and (max-width: 720px) {
+    .enlargeContainer{
+        background-color: white !important;
+        width: 100% !important;
+        max-height: none;
+        justify-content: center;
+        z-index: 999;
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        transform: none;
+        overflow: hidden;
+        display: initial;
+        transform: translateX(100%);
+        display: grid;
+        transition: 0.2s all;
+    }
+}
+.enlarge-scroll-left{
+    transform: translateX(0);
+    width: 100%;
+}
+.enlarge-opacity{
+    opacity: 1;
+}

@@ -1,0 +1,107 @@
+$switch-length: 180px;
+
+$toggle-size: 14px;
+$padding: 6px;
+.switch-container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4px !important;
+    margin-bottom: 50px !important;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: $switch-length;
+    height: $toggle-size + $padding * 2;
+    margin-top: 10px;
+  }
+  .switch::before{
+      content:"on";
+      position: absolute;
+      top: $toggle-size;
+      font-size: 12px;
+      right: $padding;
+      color: rgb(68, 68, 68);
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+  .switch::after{
+      content:"off";
+      position: absolute;
+      top: $toggle-size;
+      font-size: 12px;
+      left: 0;
+      color: rgb(68, 68, 68);
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: $padding;
+    bottom: $padding;
+    background-color: black;
+    height: 2px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: $toggle-size;
+    width: $toggle-size;
+    // left: $padding/2;
+    // bottom: $padding/2;
+    bottom: -6px;
+    left: $padding/2;
+    background-color: red;
+    border: 1px solid;
+    transition: .2s;
+  }
+  
+  input:checked + .slider:before {
+    background-color: lime;
+    transform: translateX($switch-length - $toggle-size -$toggle-size);
+    // transform: translateX($switch-length - ($toggle-size * 2));
+    // transform: translateX($switch-length - $toggle-size - $padding*2);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+.combineFilters-form{
+  display: block;
+}
+.combineFilters-title{
+  font-weight: bold;
+}
+.combineFilters-label{
+  margin-right: 10px;
+  cursor: pointer;
+  flex: 1;
+  font-size: 12px;
+}
+.combineFilters-inputContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+  border: 1px solid black;
+  padding: 3px;
+}

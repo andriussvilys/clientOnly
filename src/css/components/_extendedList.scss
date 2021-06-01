@@ -1,0 +1,18 @@
+.extendedList--form{
+    width: 100%;
+}
+.extendedList--form > form{
+    top: 5px;
+    right: 0;
+}
+.icon--chevron{
+    height: 18x !important;
+    width: 18px !important;
+}
+.icon-rotate{
+    transform: rotate(180deg);
+}
+.no-display{
+    transition: all 0.2s;
+    display: none !important;
+}

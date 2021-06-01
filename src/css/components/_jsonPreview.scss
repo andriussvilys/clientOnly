@@ -1,0 +1,100 @@
+
+.jsonPreview{
+    height: calc(100vh - 100px);
+    width: 300px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    // padding: 5px;
+    background-color: rgb(226, 226, 226);
+    overflow-y: scroll;
+}
+// .headline{
+//     // position: absolute;
+//     // top: 10px;
+//     // right: 20px;
+//     // font-size: 16px;
+//     // font-weight: 600;
+//     // border-bottom: 3px solid;
+//     // color: rgb(107, 107, 107);
+// }
+.imageBox{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px 0;
+    // position: absolute;
+    width: 270px;
+    margin-left: 5px;
+}
+.uploadPreview{
+    height: 200px;
+    min-width: 150px;
+    max-width: 250px;
+    object-fit: contain;
+    background-color: rgb(223, 223, 223);
+    margin: auto;
+    margin-bottom: 20px;
+}
+.jsonPreviewContainer{
+    margin-left: 15px;
+    width: 260px;
+    // position: absolute;
+    top: 380px;    
+    padding-bottom: 50px;
+}
+.jsonPreviewContent{
+    display: inline;
+}
+.jsonPreview--ul, .jsonPreview--subcategory, .jsonPreview--listitem{
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+}
+.jsonPreview--ul{
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(47, 47, 47);
+    background-color: rgb(233, 233, 233);
+    padding: 5px;
+    margin-bottom: 7px;
+}
+.jsonPreview--subcategory{
+    text-transform: initial;
+    font-weight: 600;
+    color: rgb(107, 107, 107);
+    font-size: 16px;
+    background-color: rgb(243, 243, 243);
+    width: 200px;
+    margin-bottom: 7px;
+}
+.jsonPreview--listitem{
+    font-weight: initial;
+    color: rgb(105, 105, 105);
+    font-size: 16px;
+}
+.preview-list-container{
+    display:flex;
+}
+.preview--list{
+    padding: 0;
+    margin-left: 30px;
+}
+.preview-container{
+    border-bottom: 1px solid rgb(165, 165, 165);
+    white-space: normal;
+    font-size: 12px;
+}
+.preview-span{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.whiteSpace--break{
+    white-space: normal;
+}
